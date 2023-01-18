@@ -1,0 +1,35 @@
+## Description
+
+<div><p>The end of the school year is near and Ms. Manana, the teacher, will soon have to say goodbye to a yet another class. She decided to prepare a goodbye present for her <span class="tex-span"><i>n</i></span> students and give each of them a jigsaw puzzle (which, as wikipedia states, is a tiling puzzle that requires the assembly of numerous small, often oddly shaped, interlocking and tessellating pieces).</p><p>The shop assistant told the teacher that there are <span class="tex-span"><i>m</i></span> puzzles in the shop, but they might differ in difficulty and size. Specifically, the first jigsaw puzzle consists of <span class="tex-span"><i>f</i><sub class="lower-index">1</sub></span> pieces, the second one consists of <span class="tex-span"><i>f</i><sub class="lower-index">2</sub></span> pieces and so on.</p><p>Ms. Manana doesn't want to upset the children, so she decided that the difference between the numbers of pieces in her presents must be as small as possible. Let <span class="tex-span"><i>A</i></span> be the number of pieces in the largest puzzle that the teacher buys and <span class="tex-span"><i>B</i></span> be the number of pieces in the smallest such puzzle. She wants to choose such <span class="tex-span"><i>n</i></span> puzzles that <span class="tex-span"><i>A</i> - <i>B</i></span> is minimum possible. Help the teacher and find the least possible value of <span class="tex-span"><i>A</i> - <i>B</i></span>.</p></div><div class="input-specification"><p>The first line contains space-separated integers <span class="tex-span"><i>n</i></span> and <span class="tex-span"><i>m</i></span> (<span class="tex-span">2 ≤ <i>n</i> ≤ <i>m</i> ≤ 50</span>). The second line contains <span class="tex-span"><i>m</i></span> space-separated integers <span class="tex-span"><i>f</i><sub class="lower-index">1</sub>, <i>f</i><sub class="lower-index">2</sub>, ..., <i>f</i><sub class="lower-index"><i>m</i></sub></span> (<span class="tex-span">4 ≤ <i>f</i><sub class="lower-index"><i>i</i></sub> ≤ 1000</span>) — the quantities of pieces in the puzzles sold in the shop.</p></div><div class="output-specification"><p>Print a single integer — the least possible difference the teacher can obtain.</p></div>
+
+## Input
+
+<p>The first line contains space-separated integers <span class="tex-span"><i>n</i></span> and <span class="tex-span"><i>m</i></span> (<span class="tex-span">2 ≤ <i>n</i> ≤ <i>m</i> ≤ 50</span>). The second line contains <span class="tex-span"><i>m</i></span> space-separated integers <span class="tex-span"><i>f</i><sub class="lower-index">1</sub>, <i>f</i><sub class="lower-index">2</sub>, ..., <i>f</i><sub class="lower-index"><i>m</i></sub></span> (<span class="tex-span">4 ≤ <i>f</i><sub class="lower-index"><i>i</i></sub> ≤ 1000</span>) — the quantities of pieces in the puzzles sold in the shop.</p>
+
+## Output
+
+<p>Print a single integer — the least possible difference the teacher can obtain.</p>
+
+
+
+
+
+```input1
+4 6
+10 12 10 7 5 22
+
+```
+
+
+
+
+```output1
+5
+
+```
+
+
+
+## Note
+
+<p>Sample 1. The class has 4 students. The shop sells 6 puzzles. If Ms. Manana buys the first four puzzles consisting of 10, 12, 10 and 7 pieces correspondingly, then the difference between the sizes of the largest and the smallest puzzle will be equal to 5. It is impossible to obtain a smaller difference. Note that the teacher can also buy puzzles 1, 3, 4 and 5 to obtain the difference 5.</p>

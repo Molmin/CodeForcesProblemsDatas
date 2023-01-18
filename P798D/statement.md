@@ -1,0 +1,33 @@
+## Description
+
+<div><p>Mike has always been thinking about the harshness of social inequality. He's so obsessed with it that sometimes it even affects him while solving problems. At the moment, Mike has two sequences of positive integers <span class="tex-span"><i>A</i> = [<i>a</i><sub class="lower-index">1</sub>, <i>a</i><sub class="lower-index">2</sub>, ..., <i>a</i><sub class="lower-index"><i>n</i></sub>]</span> and <span class="tex-span"><i>B</i> = [<i>b</i><sub class="lower-index">1</sub>, <i>b</i><sub class="lower-index">2</sub>, ..., <i>b</i><sub class="lower-index"><i>n</i></sub>]</span> of length <span class="tex-span"><i>n</i></span> each which he uses to ask people some quite peculiar questions.</p><p>To test you on how good are you at spotting inequality in life, he wants you to find an <span class="tex-font-style-it">"unfair"</span> subset of the original sequence. To be more precise, he wants you to select <span class="tex-span"><i>k</i></span> numbers <span class="tex-span"><i>P</i> = [<i>p</i><sub class="lower-index">1</sub>, <i>p</i><sub class="lower-index">2</sub>, ..., <i>p</i><sub class="lower-index"><i>k</i></sub>]</span> such that <span class="tex-span">1 ≤ <i>p</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i></span> for <span class="tex-span">1 ≤ <i>i</i> ≤ <i>k</i></span> and elements in <span class="tex-span"><i>P</i></span> are distinct. Sequence <span class="tex-span"><i>P</i></span> will represent indices of elements that you'll select from both sequences. He calls such a subset <span class="tex-span"><i>P</i></span> <span class="tex-font-style-it">"unfair"</span> if and only if the following conditions are satisfied: <span class="tex-span">2·(<i>a</i><sub class="lower-index"><i>p</i><sub class="lower-index">1</sub></sub> + ... + <i>a</i><sub class="lower-index"><i>p</i><sub class="lower-index"><i>k</i></sub></sub>)</span> is <span class="tex-font-style-bf">greater</span> than the sum of all elements from sequence <span class="tex-span"><i>A</i></span>, and <span class="tex-span">2·(<i>b</i><sub class="lower-index"><i>p</i><sub class="lower-index">1</sub></sub> + ... + <i>b</i><sub class="lower-index"><i>p</i><sub class="lower-index"><i>k</i></sub></sub>)</span> is <span class="tex-font-style-bf">greater</span> than the sum of all elements from the sequence <span class="tex-span"><i>B</i></span>. Also, <span class="tex-span"><i>k</i></span> should be smaller or equal to <img align="middle" class="tex-formula" src="file://Ep07Dfhu.png" style="max-width: 100.0%;max-height: 100.0%;"> because it will be to easy to find sequence <span class="tex-span"><i>P</i></span> if he allowed you to select too many elements!</p><p>Mike guarantees you that a solution will always exist given the conditions described above, so please help him satisfy his curiosity!</p></div><div class="input-specification"><p>The first line contains integer <span class="tex-span"><i>n</i></span> (<span class="tex-span">1 ≤ <i>n</i> ≤ 10<sup class="upper-index">5</sup></span>) — the number of elements in the sequences. </p><p>On the second line there are <span class="tex-span"><i>n</i></span> space-separated integers <span class="tex-span"><i>a</i><sub class="lower-index">1</sub>, ..., <i>a</i><sub class="lower-index"><i>n</i></sub></span> (<span class="tex-span">1 ≤ <i>a</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup class="upper-index">9</sup></span>) — elements of sequence <span class="tex-span"><i>A</i></span>.</p><p>On the third line there are also <span class="tex-span"><i>n</i></span> space-separated integers <span class="tex-span"><i>b</i><sub class="lower-index">1</sub>, ..., <i>b</i><sub class="lower-index"><i>n</i></sub></span> (<span class="tex-span">1 ≤ <i>b</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup class="upper-index">9</sup></span>) — elements of sequence <span class="tex-span"><i>B</i></span>.</p></div><div class="output-specification"><p>On the first line output an integer <span class="tex-span"><i>k</i></span> which represents the size of the found subset. <span class="tex-span"><i>k</i></span> should be less or equal to <img align="middle" class="tex-formula" src="file://PFowkWAv.png" style="max-width: 100.0%;max-height: 100.0%;">.</p><p>On the next line print <span class="tex-span"><i>k</i></span> integers <span class="tex-span"><i>p</i><sub class="lower-index">1</sub>, <i>p</i><sub class="lower-index">2</sub>, ..., <i>p</i><sub class="lower-index"><i>k</i></sub></span> (<span class="tex-span">1 ≤ <i>p</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i></span>) — the elements of sequence <span class="tex-span"><i>P</i></span>. You can print the numbers in any order you want. Elements in sequence <span class="tex-span"><i>P</i></span> should be distinct.</p></div>
+
+## Input
+
+<p>The first line contains integer <span class="tex-span"><i>n</i></span> (<span class="tex-span">1 ≤ <i>n</i> ≤ 10<sup class="upper-index">5</sup></span>) — the number of elements in the sequences. </p><p>On the second line there are <span class="tex-span"><i>n</i></span> space-separated integers <span class="tex-span"><i>a</i><sub class="lower-index">1</sub>, ..., <i>a</i><sub class="lower-index"><i>n</i></sub></span> (<span class="tex-span">1 ≤ <i>a</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup class="upper-index">9</sup></span>) — elements of sequence <span class="tex-span"><i>A</i></span>.</p><p>On the third line there are also <span class="tex-span"><i>n</i></span> space-separated integers <span class="tex-span"><i>b</i><sub class="lower-index">1</sub>, ..., <i>b</i><sub class="lower-index"><i>n</i></sub></span> (<span class="tex-span">1 ≤ <i>b</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup class="upper-index">9</sup></span>) — elements of sequence <span class="tex-span"><i>B</i></span>.</p>
+
+## Output
+
+<p>On the first line output an integer <span class="tex-span"><i>k</i></span> which represents the size of the found subset. <span class="tex-span"><i>k</i></span> should be less or equal to <img align="middle" class="tex-formula" src="file://PFowkWAv.png" style="max-width: 100.0%;max-height: 100.0%;">.</p><p>On the next line print <span class="tex-span"><i>k</i></span> integers <span class="tex-span"><i>p</i><sub class="lower-index">1</sub>, <i>p</i><sub class="lower-index">2</sub>, ..., <i>p</i><sub class="lower-index"><i>k</i></sub></span> (<span class="tex-span">1 ≤ <i>p</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i></span>) — the elements of sequence <span class="tex-span"><i>P</i></span>. You can print the numbers in any order you want. Elements in sequence <span class="tex-span"><i>P</i></span> should be distinct.</p>
+
+
+
+
+
+```input1
+5
+8 7 4 8 3
+4 2 5 3 7
+
+```
+
+
+
+
+```output1
+3
+1 4 5
+
+```
+
+
