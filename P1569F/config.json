@@ -1,0 +1,1 @@
+{"limits":{"time":"5s","memory":"256m"},"title":"Palindromic Hamiltonian Path","tags":["brute force","dfs and similar","dp","graphs","hashing","*3000"]}

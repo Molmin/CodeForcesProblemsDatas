@@ -1,0 +1,1 @@
+{"limits":{"time":"5s","memory":"512m"},"title":"Graph Coloring (hard version)","tags":["brute force","combinatorics","divide and conquer","dp","fft","graphs","*2900"]}

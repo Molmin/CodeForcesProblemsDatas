@@ -1,0 +1,1 @@
+{"limits":{"time":"2s","memory":"256m"},"title":"Erase and Extend (Easy Version)","tags":["binary search","brute force","dp","greedy","hashing","implementation","string suffix structures","strings","two pointers","*1600"]}

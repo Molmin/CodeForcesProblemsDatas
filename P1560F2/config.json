@@ -1,0 +1,1 @@
+{"limits":{"time":"1s","memory":"256m"},"title":"Nearest Beautiful Number (hard version)","tags":["bitmasks","brute force","constructive algorithms","dfs and similar","dp","greedy","*2100"]}
